@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eureka - Página de ejemplo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="imagen/Foto_academia.png" alt="Microsoft Logo" height="24" />
+    </div>
+    <nav class="nav-links">
+      <a href="#">Eureka</a>
+      <a href="#">Qué hacemos</a>
+      <a href="#">Quienes somos</a>
+      <a href="#">Cómo llegar</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Imagen debajo del header -->
+  <div class="imagen-inferior">
+    <img src="imagen/logo_ppal.jpg" alt="Imagen principal" />
+  </div>
+
+  <section class="carrusel-css">
+
+    <div class="swipe-carousel">
+
+      <div class="slide"><img src="imagen/logo_ppal.jpg" alt=""></div>
+      <div class="slide"><img src="imagen2.jpg" alt=""></div>
+      <div class="slide"><img src="imagen3.jpg" alt=""></div>
+      <div class="slide"><img src="imagen4.jpg" alt=""></div>
+    </div>
+
+    <script>
+      const carousel = document.querySelector('.swipe-carousel');
+      const slides = document.querySelectorAll('.swipe-carousel .slide');
+      let index = 0;
+
+      function autoScroll() { //Funcion javaScrip para el movimiento del carrusel
+        index = (index + 1) % slides.length;
+        const scrollPosition = slides[index].offsetLeft;
+        carousel.scrollTo({
+          left: scrollPosition,
+          behavior: 'smooth'
+        });
+      }
+
+      setInterval(autoScroll, 5000); // Cambia de slide cada 5 segundos
+    </script>
+
+  </section>
+
+</body>
+
+</html>

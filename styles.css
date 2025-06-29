@@ -1,0 +1,80 @@
+/* Estilos del header */
+header {
+  background-color: #78b1f1;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centra horizontalmente */
+}
+
+.logo {
+  margin-right: 40px; /* espacio entre logo y enlaces */
+}
+
+.nav-links {
+  display: flex;
+  gap: 80px; /* espacio entre enlaces */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: normal;
+  font-size: 1.1rem; /* un poco más grande */
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  transition: text-decoration 0.3s ease;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+/* Estilo para la imagen debajo del header */
+.imagen-inferior {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  margin-top: 40px; /* espacio desde el header */
+  margin-bottom: 40px; /* nuevo: espacio hacia el carrusel */
+}
+
+.imagen-inferior img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  height: auto;
+}
+
+.swipe-carousel {
+  border: 10 px;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  scroll-snap-stop: always;
+}
+
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: #ddd79c;
+}
+
+.slide img {
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+
+
+
+
