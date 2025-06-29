@@ -74,6 +74,69 @@ header {
   border-radius: 10px;
 }
 
+.que-hacemos {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+
+  .que-hacemos .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .que-hacemos h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+
+  .que-hacemos .descripcion {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .servicios {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .servicio {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 25px;
+    flex: 1 1 280px;
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .servicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .servicio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2980b9;
+  }
+
+  .servicio p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.4;
+  }
+
 
 
 
