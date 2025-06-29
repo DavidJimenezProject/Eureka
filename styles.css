@@ -1,27 +1,27 @@
 /* Estilos del header */
 header {
-  background-color: #78b1f1;
+  background-color: #549df0;
   padding: 20px 30px;
   display: flex;
   align-items: center;
-  justify-content: center; /* centra horizontalmente */
+  justify-content: center;
 }
 
 .logo {
-  margin-right: 40px; /* espacio entre logo y enlaces */
+  margin-right: 80px;
 }
 
 .nav-links {
   display: flex;
-  gap: 80px; /* espacio entre enlaces */
+  gap: 80px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #000;
-  font-weight: normal;
-  font-size: 1.1rem; /* un poco más grande */
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: #ffffff; /* más oscuro */
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: "Cursive", "Segoe UI", Tahoma, Verdana, serif;
   transition: text-decoration 0.3s ease;
 }
 
@@ -30,12 +30,12 @@ header {
   text-decoration-color: black;
 }
 
-/* Estilo para la imagen debajo del header */
+/* Imagen debajo del header */
 .imagen-inferior {
   display: flex;
-  justify-content: center; /* centra horizontalmente */
-  margin-top: 40px; /* espacio desde el header */
-  margin-bottom: 40px; /* nuevo: espacio hacia el carrusel */
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .imagen-inferior img {
@@ -46,7 +46,7 @@ header {
 }
 
 .swipe-carousel {
-  border: 10 px;
+  border: 10px;
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -64,7 +64,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 400px;
-  background: #ddd79c;
+  background: #dbe4bb;
 }
 
 .slide img {
@@ -74,13 +74,13 @@ header {
   border-radius: 10px;
 }
 
+/* Sección "¿Qué hacemos?" */
 .que-hacemos {
-  background-color: #f9f9f9;
-  padding: 60px 20px;
-  padding-bottom: 800px; /* espacio para scroll y animación */
+  background-color: #ffffff;
+  padding: 60px 20px 200px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  position: relative; /* para animaciones y posicionamiento */
+  color: #05134e;
+  position: relative;
 }
 
 .que-hacemos .container {
@@ -92,7 +92,7 @@ header {
 .que-hacemos h2 {
   font-size: 2.8rem;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color: #080530;
 }
 
 .que-hacemos .descripcion {
@@ -105,7 +105,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
-  color: #555;
+  color: #222; /* más oscuro */
 }
 
 .que-hacemos .descripcion.visible {
@@ -113,7 +113,7 @@ header {
   transform: translateX(0);
 }
 
-/* Resto de estilos para servicios */
+/* Servicios */
 .servicios {
   display: flex;
   gap: 30px;
@@ -123,7 +123,7 @@ header {
 
 .servicio {
   background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgb(12, 7, 63);
   border-radius: 10px;
   padding: 25px;
   flex: 1 1 280px;
@@ -148,14 +148,71 @@ header {
 .servicio h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #2980b9;
+  color: #084ca5;
 }
 
 .servicio p {
   font-size: 1rem;
-  color: #666;
+  color: #111; /* más oscuro */
   line-height: 1.4;
 }
 
+/* Sección "¿Por qué nos eligen?" */
+.por-que-nos-eligen {
+  background-color: #f9f9f9;
+  padding: 60px 20px 200px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222222;
+  position: relative;
+}
 
+.por-que-nos-eligen .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.por-que-nos-eligen h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #080530;
+}
+
+.por-que-nos-eligen .descripcion {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease, transform 1s ease;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  color: #222; /* más oscuro */
+}
+
+.por-que-nos-eligen .descripcion.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Video */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  margin-top: 30px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
