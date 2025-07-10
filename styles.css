@@ -4,21 +4,22 @@ header {
   padding: 20px 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end; /* pega todo a la derecha */
+  gap: 40px; /* espacio entre logo, nav y redes */
 }
 
 .logo {
-  margin-right: 80px;
+  margin-right: 0; /* elimina margen para pegar a la derecha */
 }
 
 .nav-links {
   display: flex;
-  gap: 80px;
+  gap: 40px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #ffffff; /* más oscuro */
+  color: #ffffff;
   font-weight: 500;
   font-size: 1.2rem;
   font-family: "Cursive", "Segoe UI", Tahoma, Verdana, serif;
@@ -28,6 +29,22 @@ header {
 .nav-links a:hover {
   text-decoration: underline;
   text-decoration-color: black;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a svg {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  transition: fill 0.3s ease;
+}
+
+.social-icons a:hover svg {
+  fill: #000000;
 }
 
 /* Imagen debajo del header */
