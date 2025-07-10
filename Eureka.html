@@ -108,53 +108,106 @@
   <section class="horario-section">
   <div class="horario-container">
     <div class="horario-imagen">
-      <img src="imagen/fondo.png" alt="Reloj animado">
+      <img src="imagen/fondo.png" alt="Reloj animado" />
     </div>
     <div class="horario-texto">
       <h2>HORARIO</h2>
-      <pre class="horario-lista">
-        Lunes         16:00 - 20:00
-
-        Martes        10:00 - 12:00
-                      16:00 - 21:00
-
-        Miércoles     16:00 - 20:00
-
-        Jueves        10:00 - 12:00
-                      16:00 - 21:00
-
-        Viernes       16:00 - 18:00
-      </pre>
+      <div class="horario-lista">
+        <div class="horario-row">
+          <div class="dia">Lunes</div>
+          <div class="horarios">16:00 - 20:00</div>
+        </div>
+        <div class="horario-row">
+          <div class="dia">Martes</div>
+          <div class="horarios">
+            10:00 - 12:00<br>
+            16:00 - 21:00
+          </div>
+        </div>
+        <div class="horario-row">
+          <div class="dia">Miércoles</div>
+          <div class="horarios">16:00 - 20:00</div>
+        </div>
+        <div class="horario-row">
+          <div class="dia">Jueves</div>
+          <div class="horarios">
+            10:00 - 12:00<br>
+            16:00 - 21:00
+          </div>
+        </div>
+        <div class="horario-row">
+          <div class="dia">Viernes</div>
+          <div class="horarios">16:00 - 18:00</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="como-llegar">
-  <h2 class="titulo-llegar">¿Cómo llegar?</h2>
-  <div class="cuadrados-container">
-    
-    <!-- Primer cuadro -->
-    <div class="cuadro izquierda">
-      <h3>Academia Pinto</h3>
-      <p>Calle Rafael Alberti, 2</p>
-      <p>28320  Pinto Madrid</p>
-      <div class="mapa">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.887106740179!2d-3.7037906846024736!3d40.41677597936473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228878a904fd1%3A0x9fd53bdfc9ef1efc!2sMadrid!5e0!3m2!1ses!2ses!4v1710000000000"
-          allowfullscreen="" loading="lazy"></iframe>
+  <section class="como-llegar">
+    <h2 class="titulo-llegar">¿Cómo llegar?</h2>
+    <div class="cuadrados-container">
+
+      <!-- Primer cuadro -->
+      <div class="cuadro izquierda">
+        <h3>Academia Pinto</h3>
+        <p>Calle Rafael Alberti, 2</p>
+        <p>28320 Pinto, Madrid</p>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.3786241795246!2d-3.6997295847470347!3d40.24133807937892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418d81ef6e01a9%3A0xfcb738f9fd5c09f!2sC.%20Rafael%20Alberti%2C%202%2C%2028320%20Pinto%2C%20Madrid!5e0!3m2!1ses!2ses!4v1719930412345"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
+
+      <!-- Segundo cuadro -->
+
+      <!-- Segundo cuadro -->
+      <div class="cuadro">
+        <h3>Academia Parla</h3>
+        <p>Calle Reyes Católicos, 6 (Esquina Alfonso X “El Sabio”)</p>
+        <p>28982 Parla, Madrid</p>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1234567890123!2d-3.7601234567890123!3d40.23987654321098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418abcd1234abcd%3A0xabcd1234abcd5678!2sC.%20Reyes%20Cat%C3%B3licos%2C%206%2C%2028982%20Parla%2C%20Madrid!5e0!3m2!1ses!2ses!4v1719999999999"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+<section class="contacto-suscripcion">
+  <div class="bloques-contacto">
+
+    <!-- ¿Quieres decirnos algo? -->
+    <div class="bloque">
+      <h3>¿Quieres decirnos algo?</h3>
+      <form class="form-contacto">
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="¿Qué nos quieres contar?" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
 
-    <!-- Segundo cuadro -->
-    <div class="cuadro">
-      <h3>Academia Parla</h3>
-      <p>Calle Reyes Católicos, 6 (Esquina Alfonso X "El Sabio")</p>
-      <p>28982  Parla Madrid</p>
-      <div class="mapa">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.887106740179!2d-3.7037906846024736!3d40.41677597936473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228878a904fd1%3A0x9fd53bdfc9ef1efc!2sMadrid!5e0!3m2!1ses!2ses!4v1710000000000"
-          allowfullscreen="" loading="lazy"></iframe>
+    <!-- Suscripción -->
+    <div class="bloque">
+      <h3>Suscríbete para noticias,<br />novedades y promociones</h3>
+      <div class="iconos-redes">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
       </div>
+      <form class="form-suscripcion">
+        <input type="email" placeholder="Escribe aquí tu email" required />
+        <button type="submit">Suscríbete</button>
+      </form>
     </div>
 
   </div>
@@ -213,22 +266,22 @@
   </script>
 
   <script>
-  const cuadros = document.querySelectorAll('.cuadro');
+    const cuadros = document.querySelectorAll('.cuadro');
 
-  function mostrarCuadrosAlScroll() {
-    cuadros.forEach((cuadro) => {
-      const top = cuadro.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
+    function mostrarCuadrosAlScroll() {
+      cuadros.forEach((cuadro) => {
+        const top = cuadro.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
 
-      if (top < windowHeight - 100) {
-        cuadro.classList.add('visible');
-      }
-    });
-  }
+        if (top < windowHeight - 100) {
+          cuadro.classList.add('visible');
+        }
+      });
+    }
 
-  window.addEventListener('scroll', mostrarCuadrosAlScroll);
-  window.addEventListener('load', mostrarCuadrosAlScroll);
-</script>
+    window.addEventListener('scroll', mostrarCuadrosAlScroll);
+    window.addEventListener('load', mostrarCuadrosAlScroll);
+  </script>
 
 
 
