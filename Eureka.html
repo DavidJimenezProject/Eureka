@@ -105,6 +105,61 @@
     </div>
   </section>
 
+  <section class="horario-section">
+  <div class="horario-container">
+    <div class="horario-imagen">
+      <img src="imagen/fondo.png" alt="Reloj animado">
+    </div>
+    <div class="horario-texto">
+      <h2>HORARIO</h2>
+      <pre class="horario-lista">
+        Lunes         16:00 - 20:00
+
+        Martes        10:00 - 12:00
+                      16:00 - 21:00
+
+        Miércoles     16:00 - 20:00
+
+        Jueves        10:00 - 12:00
+                      16:00 - 21:00
+
+        Viernes       16:00 - 18:00
+      </pre>
+    </div>
+  </div>
+</section>
+
+<section class="como-llegar">
+  <h2 class="titulo-llegar">¿Cómo llegar?</h2>
+  <div class="cuadrados-container">
+    
+    <!-- Primer cuadro -->
+    <div class="cuadro izquierda">
+      <h3>Academia Pinto</h3>
+      <p>Calle Rafael Alberti, 2</p>
+      <p>28320  Pinto Madrid</p>
+      <div class="mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.887106740179!2d-3.7037906846024736!3d40.41677597936473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228878a904fd1%3A0x9fd53bdfc9ef1efc!2sMadrid!5e0!3m2!1ses!2ses!4v1710000000000"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <!-- Segundo cuadro -->
+    <div class="cuadro">
+      <h3>Academia Parla</h3>
+      <p>Calle Reyes Católicos, 6 (Esquina Alfonso X "El Sabio")</p>
+      <p>28982  Parla Madrid</p>
+      <div class="mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.887106740179!2d-3.7037906846024736!3d40.41677597936473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228878a904fd1%3A0x9fd53bdfc9ef1efc!2sMadrid!5e0!3m2!1ses!2ses!4v1710000000000"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
   <script>//JavaScrip para la transicion de los textos
     const descripciones = document.querySelectorAll('.descripcion');
 
@@ -156,6 +211,25 @@
 
     setInterval(autoScroll, 5000); // Cambia de slide cada 5 segundos
   </script>
+
+  <script>
+  const cuadros = document.querySelectorAll('.cuadro');
+
+  function mostrarCuadrosAlScroll() {
+    cuadros.forEach((cuadro) => {
+      const top = cuadro.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (top < windowHeight - 100) {
+        cuadro.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', mostrarCuadrosAlScroll);
+  window.addEventListener('load', mostrarCuadrosAlScroll);
+</script>
+
 
 
 
