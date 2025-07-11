@@ -513,4 +513,71 @@ section::before {
   cursor: pointer;
 }
 
+/* Ajustes específicos para los bloques dentro de contacto-suscripcion */
+
+.contacto-suscripcion .bloque {
+  background-color: rgb(250, 248, 238);
+  padding: 30px;
+  border-radius: 12px;
+  flex: 1 1 400px;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(214, 229, 247, 0.1);
+  text-align: center;
+  opacity: 1;
+}
+
+.contacto-suscripcion .bloque h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #2980b9;
+}
+
+/* Estilos solo para el formulario dentro del primer bloque */
+.contacto-suscripcion .bloque:first-child .form-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contacto-suscripcion .bloque:first-child .form-contacto input,
+.contacto-suscripcion .bloque:first-child .form-contacto textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.contacto-suscripcion .bloque:first-child .form-contacto button {
+  background-color: #509afa;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-suscripcion .bloque:first-child .form-contacto button:hover {
+  background-color: #397bd7;
+}
+
+/* Estilo para el segundo bloque (datos de contacto) */
+.contacto-suscripcion .bloque:last-child p {
+  font-size: 1.3rem;       /* un poco más grande */
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-align: center;      /* centrado */
+  font-weight: 500;        /* un toque más de peso para mejor lectura */
+}
+
+.contacto-suscripcion .bloque:last-child h3 {
+  text-align: center;
+}
+
 
