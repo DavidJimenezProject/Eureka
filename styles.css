@@ -87,7 +87,6 @@ header {
   justify-content: center;
   align-items: center;
   height: 400px;
-  background: #dbe4bb;
   box-sizing: border-box; /* Asegura que el padding no desborde */
 }
 
