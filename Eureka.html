@@ -228,7 +228,7 @@
     <div class="bloques-contacto">
 
       <!-- ¿Quieres decirnos algo? -->
-      <div class="bloque">
+      <div class="bloque desde-izquierda">
         <h3>¿Quieres decirnos algo?</h3>
         <form class="form-contacto">
           <input type="text" placeholder="Nombre" required />
@@ -240,7 +240,7 @@
 
       <!-- Suscripción -->
      <div class="bloque">
-  <h3>Contacta con nosotros</h3>
+  <div class="bloque desde-derecha">
   <p><strong>Mail:</strong><br>academiaeureka@gmail.com</p>
   <p><strong>Teléfonos:</strong><br>639 17 99 73<br>638 31 23 56</p>
   <p><strong>Whatsapp:</strong><br>644 07 97 98</p>
@@ -333,6 +333,24 @@
       video.currentTime = 3;
     });
   </script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const bloques = document.querySelectorAll(".bloque");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    bloques.forEach(bloque => observer.observe(bloque));
+  });
+</script>
 
 </body>
 

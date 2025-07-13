@@ -624,7 +624,7 @@ section::before {
 /* Estilo para el segundo bloque (datos de contacto) */
 .contacto-suscripcion .bloque:last-child p {
   font-size: 1.3rem;       /* un poco más grande */
-  color: #333;
+  color: #000000;
   margin-bottom: 15px;
   line-height: 1.6;
   text-align: center;      /* centrado */
@@ -634,5 +634,48 @@ section::before {
 .contacto-suscripcion .bloque:last-child h3 {
   text-align: center;
 }
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.bloque {
+  background-color: rgb(250, 248, 238);
+  padding: 30px;
+  border-radius: 12px;
+  flex: 1 1 400px;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(214, 229, 247, 0.1);
+  text-align: center;
+  opacity: 0;
+}
+
+/* Activan la animación cuando aparecen */
+.bloque.visible.desde-izquierda {
+  animation: slideFromLeft 0.8s ease-out forwards;
+}
+
+.bloque.visible.desde-derecha {
+  animation: slideFromRight 0.8s ease-out forwards;
+}
+
 
 
