@@ -12,7 +12,7 @@
 
   <header class="header">
     <div class="logo">
-      <img src="imagen/Foto_academia.png" alt="Logo Eureka"/>
+      <img src="imagen/Foto_academia.png" alt="Logo Eureka" />
     </div>
 
     <div class="center-text">
@@ -38,7 +38,7 @@
       </a>
       <!-- Youtube -->
       <a href="https://www.youtube.com/@EurekaCentrodeEstudios" target="_blank" aria-label="Youtube">
-      <img src="imagen/icono-youtube.png" alt="YouTube" width="24" height="24" />
+        <img src="imagen/icono-youtube.png" alt="YouTube" width="24" height="24" />
       </a>
 
       <!-- Instagram -->
@@ -128,21 +128,22 @@
         </video>
       </div>
       <div class="descripcion">
-        <p>El Centro de Estudios Eureka abrió sus puertas en Agosto de 2008.</p>
-        <p>Desde el primer día nuestro objetivo ha sido que nuestros alumnos superen sus asignaturas de una forma
-          efectiva, entretenida y con un ambiente de trabajo que le ayude a entrar en una dinámica de estudio que les
-          sirva para el futuro.</p>
-        <p>El método es sencillo, nosotros nos centramos en lo realmente importante, nuestros alumnos y los
-          conocimientos que les impartimos. No disponemos de grandes locales ni llamativas campañas de marketing.</p>
-        <p>A nosotros sólo nos importa poder ofrecerte nuestra ayuda, que apruebes tus exámenes y que pases un rato
-          entretenido y provechoso con nosotros, queremos que tengas ganas de volver cada día, para nosotros eres uno
-          más de nuestra pequeña familia educativa de Eureka.</p>
-        <p>Todos queremos ver el resultado de nuestras inversiones y ahora más que nunca; por eso, aquí en Eureka,
-          hacemos que aproveches al máximo el dinero que nos pagas.</p>
-        <p>Te ofrecemos planes de estudio personalizados, ven y cuéntanos tu caso.</p>
+        <p>En Eureka, la profesionalidad es la base de todo lo que hacemos, pero también nos importa que te sientas como
+          en casa.</p>
+        <p>Desde 2008, nuestro equipo de profesionales cualificados combina experiencia con cercanía para que cada
+          alumno reciba una atención personalizada y un apoyo constante.</p>
+        <p>Sabemos que aprobar no es solo cuestión de estudiar, sino de entender, motivarse y contar con un ambiente
+          positivo donde crecer académicamente.</p>
+        <p>Por eso, no solo te ofrecemos clases, sino un espacio donde te escuchamos, te guiamos y adaptamos nuestros
+          métodos a tus necesidades reales.</p>
+        <p>Muchos alumnos nos eligen porque valoran nuestro compromiso, la calidad de la enseñanza y la calidez humana
+          que ponemos en cada clase.</p>
+        <p>Si buscas un lugar donde te traten como persona, donde el esfuerzo se valore y los resultados lleguen, ven a
+          Eureka y forma parte de nuestra familia educativa.</p>
       </div>
+    </div>
 
-      <!-- VIDEO -->
+    <!-- VIDEO -->
 
     </div>
   </section>
@@ -239,14 +240,14 @@
       </div>
 
       <!-- Suscripción -->
-     <div class="bloque">
-  <div class="bloque desde-derecha">
-  <p><strong>Mail:</strong><br>academiaeureka@gmail.com</p>
-  <p><strong>Teléfonos:</strong><br>639 17 99 73<br>638 31 23 56</p>
-  <p><strong>Whatsapp:</strong><br>644 07 97 98</p>
-</div>
+      <div class="bloque">
+        <div class="bloque desde-derecha">
+          <p><strong>Mail:</strong><br>academiaeureka@gmail.com</p>
+          <p><strong>Teléfonos:</strong><br>639 17 99 73<br>638 31 23 56</p>
+          <p><strong>Whatsapp:</strong><br>644 07 97 98</p>
+        </div>
 
-    </div>
+      </div>
   </section>
 
   <script>//JavaScrip para la transicion de los textos
@@ -333,24 +334,24 @@
       video.currentTime = 3;
     });
   </script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const bloques = document.querySelectorAll(".bloque");
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const bloques = document.querySelectorAll(".bloque");
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.2
       });
-    }, {
-      threshold: 0.2
-    });
 
-    bloques.forEach(bloque => observer.observe(bloque));
-  });
-</script>
+      bloques.forEach(bloque => observer.observe(bloque));
+    });
+  </script>
 
 </body>
 
