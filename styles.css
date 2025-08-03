@@ -677,5 +677,12 @@ section::before {
   animation: slideFromRight 0.8s ease-out forwards;
 }
 
+/*Quitar eñ subrayado del htmp en los enlaces cliclabes al los otros htmls*/
+.servicio-enlace {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+s
 
 
