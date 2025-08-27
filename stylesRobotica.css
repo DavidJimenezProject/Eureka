@@ -437,7 +437,7 @@ section::before {
 }
 
 .contacto-suscripcion .bloque:first-child .form-contacto button {
-  background-color: #fa5050;
+  background-color: #fb3d3d;
   color: white;
   padding: 12px;
   font-size: 1rem;
@@ -448,7 +448,7 @@ section::before {
 }
 
 .contacto-suscripcion .bloque:first-child .form-contacto button:hover {
-  background-color: #397bd7;
+  background-color: #7e0404;
 }
 
 /* Estilo para el segundo bloque (datos de contacto) */
