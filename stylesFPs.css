@@ -1,5 +1,5 @@
 header {
-  background-color: #0c3c96b1;
+  background-color: #140d7ac8;
   height: 50px;             /* altura delgada */
   display: flex;
   align-items: center;
@@ -153,28 +153,28 @@ header {
   border-radius: 10px;
 }
 
-/* Sección "¿Qué hacemos?" */
-.que-hacemos {
+/* Sección "Metodología" */
+.metodologia{
   background-color: #ffffff;
   padding: 60px 20px 200px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #05134e;
+  color: #3f054e;
   position: relative;
 }
 
-.que-hacemos .container {
+.metodologia .container {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
 
-.que-hacemos h2 {
+.metodologia h2 {
   font-size: 2.8rem;
   margin-bottom: 20px;
-  color: #080530;
+  color: #1e0bcd;
 }
 
-.que-hacemos .descripcion {
+.metodologia .descripcion {
   opacity: 0;
   transform: translateX(100px);
   transition: opacity 1s ease, transform 1s ease;
@@ -187,7 +187,7 @@ header {
   color: #222; /* más oscuro */
 }
 
-.que-hacemos .descripcion.visible {
+.metodologia .descripcion.visible {
   opacity: 1;
   transform: translateX(0);
 }
@@ -202,7 +202,7 @@ header {
 
 .servicio {
   background-color: #fff;
-  box-shadow: 0 4px 12px rgb(12, 7, 63);
+  box-shadow: 0 4px 12px rgb(53, 7, 63);
   border-radius: 10px;
   padding: 25px;
   flex: 1 1 280px;
@@ -227,7 +227,7 @@ header {
 .servicio h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #084ca5;
+  color: #280bcd;
 }
 
 .servicio p {
@@ -236,8 +236,8 @@ header {
   line-height: 1.4;
 }
 
-/* Sección "¿Por qué nos eligen?" */
-.por-que-nos-eligen {
+/* Actividades */
+.actividades {
   background-color: #f9f9f9;
   padding: 60px 20px 200px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -245,19 +245,19 @@ header {
   position: relative;
 }
 
-.por-que-nos-eligen .container {
+.actividades .container {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
 
-.por-que-nos-eligen h2 {
+.actividades h2 {
   font-size: 2.8rem;
   margin-bottom: 20px;
-  color: #080530;
+  color: #4126dd;
 }
 
-.por-que-nos-eligen .descripcion {
+.actividades .descripcion {
   opacity: 0;
   transform: translateX(100px);
   transition: opacity 1s ease, transform 1s ease;
@@ -270,108 +270,9 @@ header {
   color: #222; /* más oscuro */
 }
 
-.por-que-nos-eligen .descripcion.visible {
+.pactividades .descripcion.visible {
   opacity: 1;
   transform: translateX(0);
-}
-
-/* Video */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-  margin-top: 30px;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-/*Zona de horarios*/
-
-.horario-section {
-  background-color: #ffffff;
-  padding: 100px 60px; /* más padding general */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.horario-container {
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 150px; /* más espacio entre imagen y texto */
-  flex-wrap: wrap;
-}
-
-.horario-imagen img {
-  max-width: 400px; /* imagen más grande */
-  margin-left: -150px; 
-  height: auto;
-  
-}
-
-.horario-texto h2 {
-  font-size: 3.2rem; /* título más grande */
-  margin-bottom: 40px;
-  color: #080530;
-  font-family: 'Bebas Neue', cursive;
-}
-
-.horario-lista {
-  font-size: 1.5rem; /* texto más grande */
-  color: #000000;
-  line-height: 2.2;
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem; /* más espacio entre filas */
-  max-width: 420px;
-}
-
-.horario-row {
-  display: flex;
-  gap: 3rem; /* más espacio entre día y horas */
-  align-items: center;
-}
-
-.dia {
-  font-family: 'Bebas Neue', cursive;
-  min-width: 140px; /* ancho fijo más amplio */
-  flex-shrink: 0;
-}
-
-.horarios {
-  font-family: 'Bebas Neue', cursive;
-  white-space: normal;
-  line-height: 1.8;
-  flex: 1;
-}
-
-
-
-
-/* CONTENEDOR GENERAL */
-.como-llegar {
-  padding: 60px 20px;
-  background-color: #f5f5f5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow: hidden; /* evita scroll por animaciones laterales */
-}
-
-.titulo-llegar {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #080530;
-  margin-bottom: 40px;
 }
 
 /* CONTENEDORES FLEXIBLES */
@@ -382,77 +283,6 @@ header {
   gap: 40px;
   max-width: 1100px;
   margin: auto;
-}
-
-/* CUADRO GENERAL */
-.cuadro {
-  flex: 1 1 45%;
-  background-color: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  opacity: 0;
-  transform: translateX(100px); /* por defecto entra desde la derecha */
-  transition: transform 1s ease, opacity 1s ease;
-}
-
-.cuadro.izquierda {
-  transform: translateX(-100px); /* entra desde la izquierda */
-}
-
-.cuadro.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* CONTENIDO DEL CUADRO */
-.cuadro h3, .cuadro p, .cuadro a {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.cuadro.visible h3,
-.cuadro.visible p,
-.cuadro.visible a {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.3s;
-}
-
-.cuadro h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #2980b9;
-}
-
-.cuadro p {
-  font-size: 1.1rem;
-  margin-bottom: 12px;
-  color: #333;
-}
-
-.cuadro a {
-  color: #2980b9;
-  text-decoration: none;
-}
-
-.cuadro a:hover {
-  text-decoration: underline;
-}
-
-.mapa {
-  margin-top: 20px;
-  height: 250px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.mapa iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 10px;
 }
 
 /* Fondo degradado para toda la página */
@@ -542,7 +372,7 @@ section::before {
 
 .form-contacto button,
 .form-suscripcion button {
-  background-color: #509afa;
+  background-color: #5b50fa;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -554,7 +384,7 @@ section::before {
 
 .form-contacto button:hover,
 .form-suscripcion button:hover {
-  background-color: #7aabeb;
+  background-color: #7a8feb;
 }
 
 .iconos-redes {
@@ -584,7 +414,7 @@ section::before {
 .contacto-suscripcion .bloque h3 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #2980b9;
+  color: #2b29b9;
 }
 
 /* Estilos solo para el formulario dentro del primer bloque */
@@ -607,7 +437,7 @@ section::before {
 }
 
 .contacto-suscripcion .bloque:first-child .form-contacto button {
-  background-color: #509afa;
+  background-color: #4a3ef8;
   color: white;
   padding: 12px;
   font-size: 1rem;
@@ -618,7 +448,7 @@ section::before {
 }
 
 .contacto-suscripcion .bloque:first-child .form-contacto button:hover {
-  background-color: #397bd7;
+  background-color: #301aad;
 }
 
 /* Estilo para el segundo bloque (datos de contacto) */
@@ -682,6 +512,70 @@ section::before {
   text-decoration: none;
   color: inherit;
   display: block;
+}
+
+/* Contenedor general de actividades */
+/* Contenedor que agrupa todas las actividades */
+.actividades-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* una columna por defecto */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Cada actividad ahora es un flex container */
+.actividad {
+  display: flex;
+  align-items: center;
+  background-color: #f5f7fa;
+  border: 2px solid #d7e748c3;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+/* Texto a la izquierda */
+.contenido {
+  flex: 1;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.contenido h3 {
+  margin: 0;
+  color: #2e1dca;
+  font-size: 1.3rem;
+}
+
+.contenido p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+
+  margin-top: 8px;
+}
+
+/* Imagen a la derecha */
+.imagen img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .actividad {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagen img {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 
