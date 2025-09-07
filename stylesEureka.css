@@ -459,7 +459,7 @@ header {
 body, html {
   height: 100%;
   margin: 0;
-  background: linear-gradient(to right, #f7dc6f, #85c1e9); /* amarillo → azul */
+  background: linear-gradient(to right, #FFD700, #4da3dd); /* amarillo → azul */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #222;
 }
@@ -481,13 +481,16 @@ section::before {
   z-index: 0;
   pointer-events: none;
   background-image:
+  
     radial-gradient(circle 80px at 15% 20%, rgba(85, 150, 230, 0.6), transparent 70%),
     radial-gradient(circle 40px at 70% 15%, rgba(247, 220, 111, 0.6), transparent 70%),
     radial-gradient(circle 60px at 30% 80%, rgba(85, 150, 230, 0.5), transparent 70%),
     radial-gradient(circle 50px at 85% 60%, rgba(247, 220, 111, 0.6), transparent 70%),
     radial-gradient(circle 35px at 10% 90%, rgba(85, 150, 230, 0.6), transparent 70%),
     radial-gradient(circle 70px at 90% 85%, rgba(247, 220, 111, 0.5), transparent 70%);
+ 
 }
+
 .contacto-suscripcion {
   background-color: #fff; /* blanco sólido */
   padding: 60px 20px;
