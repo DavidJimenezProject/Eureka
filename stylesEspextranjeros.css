@@ -1,5 +1,5 @@
 header {
-  background-color: #c039febd;
+  background-color: #fe3939bd;
   height: 50px;             /* altura delgada */
   display: flex;
   align-items: center;
@@ -158,7 +158,7 @@ header {
   background-color: #ffffff;
   padding: 60px 20px 200px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #3e054e;
+  color: #4e0505;
   position: relative;
 }
 
@@ -171,7 +171,7 @@ header {
 .metodologia h2 {
   font-size: 2.8rem;
   margin-bottom: 20px;
-  color: #a926dd;
+  color: #dd2626;
 }
 
 .metodologia .descripcion {
@@ -227,7 +227,7 @@ header {
 .servicio h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #861c9e;
+  color: #9e1c1c;
 }
 
 .servicio p {
@@ -254,7 +254,7 @@ header {
 .actividades h2 {
   font-size: 2.8rem;
   margin-bottom: 20px;
-  color: #ce26dd;
+  color: #dd2626;
 }
 
 .actividades .descripcion {
@@ -372,7 +372,7 @@ section::before {
 
 .form-contacto button,
 .form-suscripcion button {
-  background-color: #d250fa;
+  background-color: #fa5050;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -384,7 +384,7 @@ section::before {
 
 .form-contacto button:hover,
 .form-suscripcion button:hover {
-  background-color: #cf7aeb;
+  background-color: #eb7a7a;
 }
 
 .iconos-redes {
@@ -414,7 +414,7 @@ section::before {
 .contacto-suscripcion .bloque h3 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #a629b9;
+  color: #b92929;
 }
 
 /* Estilos solo para el formulario dentro del primer bloque */
@@ -437,7 +437,7 @@ section::before {
 }
 
 .contacto-suscripcion .bloque:first-child .form-contacto button {
-  background-color: #cd50fa;
+  background-color: #fa5050;
   color: white;
   padding: 12px;
   font-size: 1rem;
@@ -448,7 +448,7 @@ section::before {
 }
 
 .contacto-suscripcion .bloque:first-child .form-contacto button:hover {
-  background-color: #9839d7;
+  background-color: #d73939;
 }
 
 /* Estilo para el segundo bloque (datos de contacto) */
@@ -546,7 +546,7 @@ section::before {
 
 .contenido h3 {
   margin: 0;
-  color: #aa1dca;
+  color: #ca1d1d;
   font-size: 1.3rem;
 }
 
