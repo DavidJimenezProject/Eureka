@@ -160,9 +160,9 @@
             </article>
           </a>
 
-          <a href="espextranjeros.html" class="servicio-enlace">
+          <a href="clases-ingles.html" class="servicio-enlace">
             <article class="servicio">
-              <h3>Español para extranjeros</h3>
+              <h3>Clases de Inglés</h3>
             </article>
           </a>
         </div>
@@ -220,7 +220,11 @@
 </div>
     </section>
 
-    <div class="bloque desde-izquierda">
+  <section class="contacto-suscripcion" id="contacto">
+    <div class="bloques-contacto">
+
+<!-- ¿Quieres decirnos algo? -->
+<div class="bloque desde-izquierda">
   <h3>¿Quieres decirnos algo?</h3>
   <form id="contactForm" class="form-contacto" action="https://formspree.io/f/mqayejwl" method="POST">
     <!-- Campo oculto para personalizar el asunto del correo -->
@@ -234,19 +238,18 @@
   <div class="mensaje-exito" id="mensajeExito" style="display:none; color:green; margin-top:10px; text-align:center;">
     ✅ ¡Tu mensaje ha sido enviado correctamente!
   </div>
+</div>
 
-        <!-- Suscripción -->
-        <div class="bloque">
-          <div class="bloque desde-derecha">
-            <p><strong>Mail:</strong><br />academiaeureka@gmail.com</p>
-            <p>
-              <strong>Teléfonos:</strong><br />639 17 99 73<br />638 31 23 56
-            </p>
-            <p><strong>Whatsapp:</strong><br />644 07 97 98</p>
-          </div>
+      <!-- Suscripción -->
+      <div class="bloque">
+        <div class="bloque desde-derecha">
+          <p><strong>Mail:</strong><br>academiaeureka@gmail.com</p>
+          <p><strong>Teléfonos:</strong><br>639 17 99 73<br>638 31 23 56</p>
+          <p><strong>Whatsapp:</strong><br>644 07 97 98</p>
         </div>
+
       </div>
-    </section>
+  </section>
 
     <!-- Scripts -->
     <script>
@@ -338,32 +341,5 @@
         bloques.forEach((bloque) => observer.observe(bloque));
       });
     </script>
-    <script>
-  const form = document.getElementById('contactForm');
-  const mensajeExito = document.getElementById('mensajeExito');
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Evita recargar la página
-
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-      method: form.method,
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    })
-    .then(response => {
-      if (response.ok) {
-        mensajeExito.style.display = 'block';
-        form.reset();
-      } else {
-        alert("❌ Hubo un error al enviar tu mensaje. Intenta de nuevo.");
-      }
-    })
-    .catch(error => {
-      alert("❌ Hubo un error al enviar tu mensaje. Intenta de nuevo.");
-    });
-  });
-</script>
   </body>
 </html>
