@@ -560,8 +560,15 @@ section::before {
 
 /* Imagen a la derecha */
 .imagen img {
-  width: 100px;
+  width: 200px;
   height: auto;
+  border-radius: 8px;
+}
+/*Imagen Actividades*/
+#img-dele-parla {
+  display: block;
+  width: 100%;
+  margin: 0 auto; /* centra horizontalmente */
   border-radius: 8px;
 }
 
