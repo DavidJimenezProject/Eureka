@@ -239,6 +239,9 @@
 <div class="bloque desde-izquierda">
   <h3>¿Quieres decirnos algo?</h3>
   <form id="contactForm" class="form-contacto" action="https://formspree.io/f/mqayejwl" method="POST">
+    <!-- Campo oculto para personalizar el asunto del correo -->
+    <input type="hidden" name="_subject" value="Nuevo mensaje de {{nombre}}" />
+
     <input type="text" name="nombre" placeholder="Nombre" required />
     <input type="email" name="email" placeholder="Email" required />
     <textarea name="mensaje" placeholder="¿Qué nos quieres contar?" rows="4" required></textarea>
@@ -363,7 +366,7 @@
     });
   </script>
 
-  <script>
+<script>
   const form = document.getElementById('contactForm');
   const mensajeExito = document.getElementById('mensajeExito');
 
