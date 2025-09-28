@@ -389,6 +389,33 @@
       bloques.forEach(bloque => observer.observe(bloque));
     });
   </script>
+<script>
+  const form = document.getElementById('contactForm');
+  const mensajeExito = document.getElementById('mensajeExito');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita recargar la página
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        mensajeExito.style.display = 'block';
+        form.reset();
+      } else {
+        alert("❌ Hubo un error al enviar tu mensaje. Intenta de nuevo.");
+      }
+    })
+    .catch(error => {
+      alert("❌ Hubo un error al enviar tu mensaje. Intenta de nuevo.");
+    });
+  });
+</script>
 
 </body>
 
