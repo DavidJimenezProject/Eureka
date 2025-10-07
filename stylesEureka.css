@@ -355,13 +355,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px; /* más espacio entre imagen y texto */
+  gap: 30px; /* más espacio entre imagen y texto */
   flex-wrap: wrap;
 }
 
 .horario-imagen img {
   max-width: 400px; /* imagen más grande */
-  margin-left: -100px; 
+  margin-left: -80px; 
   height: auto;
   
 }
