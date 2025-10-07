@@ -360,25 +360,10 @@
 }
 
 .horario-imagen img {
-  max-width: 100%;   /* nunca supera el ancho del contenedor */
-  height: auto;      /* mantiene proporciones */
-  margin-left: 0;    /* elimina margen negativo para móviles */
-}
-
-/* Tablets */
-@media (max-width: 992px) {
-  .horario-imagen img {
-    max-width: 300px;  /* ajusta tamaño para tablet */
-    margin-left: 0;    /* centrada dentro del contenedor */
-  }
-}
-
-/* Móviles */
-@media (max-width: 600px) {
-  .horario-imagen img {
-    max-width: 200px;  /* tamaño más pequeño para móviles */
-    margin-left: 0;    /* centrada */
-  }
+  max-width: 400px; /* imagen más grande */
+  margin-left: -130px; 
+  height: auto;
+  
 }
 
 .horario-texto h2 {
