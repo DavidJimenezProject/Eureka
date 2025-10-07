@@ -124,48 +124,48 @@
   }
 }
 
-/* Móviles pequeños */
+/* Móviles pequeños — más compacta (25% más pequeña) */
 @media (max-width: 600px) {
   .header {
     height: auto;             
-    padding: 6px 10px;        /* header aún más delgado */
+    padding: 4px 8px;        /* header más delgado */
     flex-wrap: wrap;          
     justify-content: center;
     text-align: center;
   }
 
   .logo img {
-    height: 25px;             /* logo más pequeño en móvil */
+    height: 18px;             /* logo más pequeño */
   }
 
   .center-text {
-    font-size: 0.8rem;        /* eslogan más compacto */
+    font-size: 0.6rem;        /* eslogan más compacto */
     letter-spacing: 1px;      
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
 
   .nav-links {
-    flex-direction: row;       /* horizontal */
-    flex-wrap: wrap;           /* ajustar enlaces si no caben */
+    flex-direction: row;       
+    flex-wrap: wrap;           
     align-items: center;
     justify-content: center;
-    gap: 8px;                  /* menos espacio entre enlaces */
-    font-size: 0.85rem;        /* enlaces más pequeños */
+    gap: 6px;                  /* menos espacio entre enlaces */
+    font-size: 0.65rem;        /* enlaces más pequeños */
   }
 
   .nav-links a {
-    line-height: 1.2;
-    padding: 0 4px;
+    line-height: 1.1;
+    padding: 0 3px;
   }
 
   .social-icons {
-    gap: 8px;                 
+    gap: 6px;                 
   }
 
   .social-icons svg,
   .social-icons img {
-    width: 18px;              /* iconos más pequeños */
-    height: 18px;
+    width: 14px;              /* iconos más pequeños */
+    height: 14px;
   }
 }
 
