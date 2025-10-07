@@ -108,42 +108,19 @@ header {
 }
 
 @media (max-width: 600px) {
-  header {
-    height: auto;          /* altura flexible */
-    padding: 10px 15px;
-  }
-
   .center-text {
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
   }
 
   .nav-links {
-    flex-direction: row;   /* horizontal */
-    flex-wrap: wrap;       /* ajusta enlaces si no caben */
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
   }
 
   .nav-links a {
-    font-size: 0.9rem;
-    line-height: 1.2;      /* más compacto */
-    padding: 0 5px;
-  }
-
-  .social-icons {
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .logo img {
-    height: 30px;           /* más pequeño */
-  }
-
-  .social-icons svg,
-  .social-icons img {
-    width: 20px;
-    height: 20px;
+    line-height: 1.5;
   }
 }
 /* Carrusel de imágenes */
