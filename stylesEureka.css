@@ -686,6 +686,43 @@ section::before {
   color: inherit;
   display: block;
 }
+/* ======================
+   Ajustes solo para móviles
+   ====================== */
+@media (max-width: 600px) {
+  /* Ajuste de títulos principales */
+  h1, h2, h3 {
+    font-size: 1.2rem; /* más pequeño en móviles */
+    text-align: center; /* opcional, centra los títulos */
+    line-height: 1.3;  /* evita que se vea muy alto */
+  }
+
+  /* Ajustes del menú */
+  .nav-links {
+    flex-direction: column;   /* menú vertical */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    line-height: 1.5;         /* más espacio entre enlaces */
+    font-size: 1rem;          /* ajusta tamaño de texto */
+    padding: 5px 0;           /* padding más cómodo */
+  }
+
+  /* Logo centrado si quieres */
+  .logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  /* Texto del header centrado */
+  .center-text {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+}
+
 
 
 
