@@ -686,35 +686,8 @@ section::before {
   color: inherit;
   display: block;
 }
-/* ======================
-   Ajustes móviles sin cambiar la dirección del menú
-   ====================== */
-@media (max-width: 480px) {
-  /* Ajusta el texto del header */
-  .center-text {
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
 
-  /* Reduce tamaño de los enlaces del menú para que quepan */
-  .nav-links a {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    padding: 0 5px;
-  }
 
-  /* Reduce tamaño de los iconos de redes */
-  .social-icons svg,
-  .social-icons img {
-    width: 20px;
-    height: 20px;
-  }
-
-  /* Ajusta el logo si es necesario */
-  .logo img {
-    height: 30px;
-  }
-}
 
 
 
