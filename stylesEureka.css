@@ -185,7 +185,7 @@
 @media (max-width: 992px) {
   .swipe-carousel {
     max-width: 600px;  /* carrusel más pequeño en tablet */
-    padding-top: 40px;
+    padding-top: 50px;
   }
 }
 
@@ -193,7 +193,7 @@
 @media (max-width: 600px) {
   .swipe-carousel {
     max-width: 320px;  /* carrusel más compacto en móvil */
-    padding-top: 30px;
+    padding-top: 50px;
   }
 }
 
