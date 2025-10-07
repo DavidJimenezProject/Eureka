@@ -171,31 +171,32 @@
 
 /* Carrusel de imágenes */
 .swipe-carousel {
-  padding-top: 50px;
   display: flex;
-  overflow-x: hidden; /* Evita scroll manual visible */
+  overflow-x: hidden; 
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   width: 100%;
   max-width: 900px;
-  margin: auto;
+  margin: 60px auto 0 auto; /* espacio debajo del header */
   position: relative;
 }
+
 /* Tablets */
 @media (max-width: 992px) {
   .swipe-carousel {
-    max-width: 600px;  /* carrusel más pequeño en tablet */
-    margin-top: 60px;
+    max-width: 600px;  
+    margin-top: 70px;  /* header más grande al hacer wrap */
   }
 }
 
 /* Móviles */
 @media (max-width: 600px) {
   .swipe-carousel {
-    max-width: 320px;  /* carrusel más compacto en móvil */
-    margin-top: 90px;
+    max-width: 320px;  
+    margin-top: 80px;  /* suficiente espacio para no mezclarse con el header */
   }
 }
+
 
 .slide {
   flex: 0 0 100%; /* Cada slide ocupa el 100% del carrusel */
