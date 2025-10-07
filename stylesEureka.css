@@ -113,11 +113,12 @@ header {
     letter-spacing: 2px;
   }
 
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
+.nav-links {
+  flex-direction: row;       /* mantiene horizontal */
+  align-items: center;       /* centra verticalmente los enlaces */
+  justify-content: center;   /* centra el menú en el header */
+  gap: 10px;                 /* espacio entre enlaces */
+}
 
   .nav-links a {
     line-height: 1.5;
