@@ -178,6 +178,7 @@
   max-width: 900px;
   margin: 60px auto 0 auto; /* espacio debajo del header */
   position: relative;
+  margin-top: 70px
 }
 
 /* Tablets */
