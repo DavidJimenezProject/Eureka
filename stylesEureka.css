@@ -355,7 +355,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px; /* más espacio entre imagen y texto */
+  gap: 75px; /* más espacio entre imagen y texto */
   flex-wrap: wrap;
 }
 
