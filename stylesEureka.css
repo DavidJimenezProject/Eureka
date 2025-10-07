@@ -193,7 +193,7 @@
 @media (max-width: 600px) {
   .swipe-carousel {
     max-width: 320px;  /* carrusel más compacto en móvil */
-    margin-top: 50px;
+    margin-top: 90px;
   }
 }
 
