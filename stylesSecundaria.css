@@ -1,4 +1,4 @@
-header {
+.header {
   background-color: #7a0d61c8;
   height: 50px;             /* altura delgada */
   display: flex;
@@ -67,11 +67,12 @@ header {
   height: 25px;
   vertical-align: middle;
 }
+/* Tablets y pantallas medianas */
 @media (max-width: 992px) {
-  header {
+  .header {
     flex-wrap: wrap;
-    height: auto;
-    padding: 10px 20px;
+    height: auto;             
+    padding: 8px 15px;        /* menos padding para que sea más compacto */
     justify-content: center;
     text-align: center;
   }
@@ -80,47 +81,91 @@ header {
     flex: 1 1 100%;
     justify-content: center;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  .logo img {
+    height: 28px;             /* logo más pequeño */
   }
 
   .center-text {
     flex: 1 1 100%;
-    font-size: 1rem;
-    letter-spacing: 4px;
-    margin-bottom: 10px;
+    font-size: 0.95rem;       /* reducir tamaño del eslogan */
+    letter-spacing: 3px;      
+    margin-bottom: 5px;
   }
 
   .nav-links {
     flex: 1 1 100%;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
-    font-size: 1rem;
-    margin-bottom: 10px;
+    gap: 10px;                /* menos espacio entre enlaces */
+    font-size: 0.95rem;       /* enlaces más pequeños */
+    margin-bottom: 5px;
+  }
+
+  .nav-links a {
+    line-height: 1.3;
+    padding: 0 5px;
   }
 
   .social-icons {
     flex: 1 1 100%;
     justify-content: center;
     display: flex;
+    gap: 10px;                /* menos espacio entre iconos */
     margin-bottom: 5px;
+  }
+
+  .social-icons svg,
+  .social-icons img {
+    width: 20px;              /* iconos más pequeños */
+    height: 20px;
   }
 }
 
+/* Móviles pequeños — más compacta (25% más pequeña) */
 @media (max-width: 600px) {
+  .header {
+    height: auto;             
+    padding: 4px 8px;        /* header más delgado */
+    flex-wrap: wrap;          
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 18px;             /* logo más pequeño */
+  }
+
   .center-text {
-    font-size: 0.9rem;
-    letter-spacing: 2px;
+    font-size: 0.75rem;        /* eslogan más compacto */
+    letter-spacing: 1px;      
+    margin-bottom: 2px;
   }
 
   .nav-links {
-    flex-direction: column;
+    flex-direction: row;       
+    flex-wrap: wrap;           
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 6px;                  /* menos espacio entre enlaces */
+    font-size: 0.75rem;        /* enlaces más pequeños */
   }
 
   .nav-links a {
-    line-height: 1.5;
+    line-height: 1.1;
+    padding: 0 3px;
+  }
+
+  .social-icons {
+    gap: 6px;                 
+  }
+
+  .social-icons svg,
+  .social-icons img {
+    width: 14px;              /* iconos más pequeños */
+    height: 14px;
   }
 }
 /* Carrusel de imágenes */
