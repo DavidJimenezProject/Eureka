@@ -139,7 +139,7 @@
   }
 
   .center-text {
-    font-size: 0.6rem;        /* eslogan más compacto */
+    font-size: 0.75rem;        /* eslogan más compacto */
     letter-spacing: 1px;      
     margin-bottom: 2px;
   }
@@ -150,7 +150,7 @@
     align-items: center;
     justify-content: center;
     gap: 6px;                  /* menos espacio entre enlaces */
-    font-size: 0.65rem;        /* enlaces más pequeños */
+    font-size: 0.75rem;        /* enlaces más pequeños */
   }
 
   .nav-links a {
