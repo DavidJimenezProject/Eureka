@@ -108,6 +108,15 @@
 }
 
 @media (max-width: 600px) {
+
+    .header {
+    height: auto;        /* altura flexible para que no tape contenido */
+    padding: 10px 15px;  /* ajustar espacio interno */
+    flex-wrap: wrap;     /* permitir que los elementos se acomoden */
+    justify-content: center;
+    text-align: center;
+  }
+
   .center-text {
     font-size: 0.9rem;
     letter-spacing: 2px;
