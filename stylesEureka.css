@@ -687,42 +687,6 @@ section::before {
   display: block;
 }
 
-/* ======================
-   Ajustes móviles finales
-   ====================== */
-@media (max-width: 480px) {
-  /* Texto del header más pequeño */
-  .center-text {
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
-
-  /* Mantener menú horizontal pero más compacto */
-  .nav-links {
-    flex-direction: row; /* horizontal */
-    flex-wrap: wrap;     /* permite que los enlaces se ajusten a la pantalla */
-    justify-content: center;
-    gap: 10px;           /* menos espacio entre enlaces */
-  }
-
-  .nav-links a {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    padding: 0 5px;
-  }
-
-  /* Iconos de redes más pequeños */
-  .social-icons svg,
-  .social-icons img {
-    width: 20px;
-    height: 20px;
-  }
-
-  /* Logo más pequeño */
-  .logo img {
-    height: 30px;
-  }
-}
 
 
 
