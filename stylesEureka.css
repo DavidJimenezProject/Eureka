@@ -1,4 +1,4 @@
-header {
+.header {
   background-color: #0c3c96b1;
   height: 50px;             /* altura delgada */
   display: flex;
@@ -68,7 +68,7 @@ header {
   vertical-align: middle;
 }
 @media (max-width: 992px) {
-  header {
+  .header {
     flex-wrap: wrap;
     height: auto;
     padding: 10px 20px;
