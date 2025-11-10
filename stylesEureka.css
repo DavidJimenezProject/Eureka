@@ -359,62 +359,58 @@
 }
 /*Zona de horarios*/
 
-.horario-section {
-  background-color: #ffffff;
-  padding: 100px 60px; /* más padding general */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.table-wrap {
+  overflow-x: auto;
 }
 
-.horario-container {
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #0c3c96; /* borde más oscuro para toda la tabla */
 }
 
-.horario-imagen img {
-  max-width: 400px; /* imagen más grande */
-  margin-left: -80px; 
-  height: auto;
-  
+thead th {
+  background: rgb(243, 218, 76);
+  padding: 12px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 2px solid #0c3c96; /* borde más oscuro */
 }
 
-.horario-texto h2 {
-  font-size: 3.2rem; /* título más grande */
-  margin-bottom: 40px;
-  color: #080530;
-  font-family: 'Bebas Neue', cursive;
+thead .main-header {
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.02em;
 }
 
-.horario-lista {
-  font-size: 1.5rem; /* texto más grande */
-  color: #000000;
-  line-height: 2.2;
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem; /* más espacio entre filas */
-  max-width: 420px;
+thead .sub-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px;
+  border-bottom: 2px solid #0c3c96; /* borde más oscuro */
 }
 
-.horario-row {
-  display: flex;
-  gap: 3rem; /* más espacio entre día y horas */
-  align-items: center;
+tbody td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #0c3c96; /* borde más oscuro */
+  min-height: 40px;
 }
 
-.dia {
-  font-family: 'Bebas Neue', cursive;
-  min-width: 140px; /* ancho fijo más amplio */
-  flex-shrink: 0;
-}
-
-.horarios {
-  font-family: 'Bebas Neue', cursive;
-  white-space: normal;
-  line-height: 1.8;
-  flex: 1;
+tbody tr td:first-child {
+  text-align: left;
+  font-weight: 600;
+  padding-left: 14px;
+  background: #2068eeb1;
+  width: 22%;
+  border-right: 2px solid #0c3c96; /* borde derecho más oscuro */
 }
 
 
