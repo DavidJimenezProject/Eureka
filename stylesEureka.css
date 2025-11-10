@@ -360,7 +360,7 @@
 /*Zona de horarios*/
 
 .table-wrap {
-  overflow-x: auto;
+  overflow-x: auto; /* permite scroll horizontal en móviles */
 }
 
 table {
@@ -372,7 +372,7 @@ table {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   overflow: hidden;
-  border: 2px solid #0c3c96; /* borde más oscuro para toda la tabla */
+  border: 2px solid #0c3c96;
 }
 
 thead th {
@@ -380,7 +380,7 @@ thead th {
   padding: 12px 10px;
   font-weight: 700;
   font-size: 14px;
-  border-bottom: 2px solid #0c3c96; /* borde más oscuro */
+  border-bottom: 2px solid #0c3c96;
 }
 
 thead .main-header {
@@ -394,14 +394,15 @@ thead .sub-header {
   font-weight: 700;
   font-size: 13px;
   padding: 10px;
-  border-bottom: 2px solid #0c3c96; /* borde más oscuro */
+  border-bottom: 2px solid #0c3c96;
 }
 
 tbody td {
   padding: 10px;
   text-align: center;
-  border-bottom: 2px solid #0c3c96; /* borde más oscuro */
+  border-bottom: 2px solid #0c3c96;
   min-height: 40px;
+  word-wrap: break-word; /* evita que el texto se salga */
 }
 
 tbody tr td:first-child {
@@ -410,8 +411,26 @@ tbody tr td:first-child {
   padding-left: 14px;
   background: #2068eeb1;
   width: 22%;
-  border-right: 2px solid #0c3c96; /* borde derecho más oscuro */
+  border-right: 2px solid #0c3c96;
 }
+
+/* --- MEDIA QUERIES PARA MÓVIL --- */
+@media (max-width: 768px) {
+  thead th, thead .sub-header, tbody td {
+    font-size: 12px; /* reducir tamaño de fuente */
+    padding: 6px 4px; /* reducir padding */
+  }
+
+  tbody tr td:first-child {
+    font-size: 13px;
+    padding-left: 8px;
+  }
+
+  table {
+    max-width: 100%; /* que no exceda el ancho de la pantalla */
+  }
+}
+
 
 
 
