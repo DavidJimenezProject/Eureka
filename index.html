@@ -424,6 +424,25 @@
   });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const table = document.querySelector(".table-wrap table");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        table.classList.add("visible");
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  observer.observe(table);
+});
+
+</script>
+
 </body>
 
 </html>
