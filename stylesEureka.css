@@ -11,12 +11,12 @@
   top: 0;
   left: 0;
   z-index: 1000;            /* por encima de otros elementos */
-  font-size: 1.2rem;
+  font-size: 1 rem;
   color: white;
 }
 .center-text{
   font-family: 'Bebas Neue', cursive;
-  font-size: 1.2rem;
+  font-size: 1 rem;
   opacity: 0.8;
   color: #ffffff;
   text-align: center;
@@ -37,7 +37,7 @@
 .nav-links {
   display: flex;
   gap: 35px;
-  font-size: 1.1rem;
+  font-size: 1 rem;
 }
 
 .nav-links a {
