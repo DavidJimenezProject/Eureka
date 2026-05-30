@@ -11,12 +11,12 @@
   top: 0;
   left: 0;
   z-index: 1000;            /* por encima de otros elementos */
-  font-size: 1.2rem;
+  font-size: 1 rem;
   color: white;
 }
 .center-text{
   font-family: 'Bebas Neue', cursive;
-  font-size: 1.2rem;
+  font-size: 1 rem;
   opacity: 0.8;
   color: #ffffff;
   text-align: center;
@@ -37,7 +37,7 @@
 .nav-links {
   display: flex;
   gap: 35px;
-  font-size: 1.1rem;
+  font-size: 1 rem;
 }
 
 .nav-links a {
@@ -168,6 +168,7 @@
     height: 14px;
   }
 }
+
 
 /* Carrusel de imágenes */
 .swipe-carousel {
@@ -359,63 +360,89 @@
 }
 /*Zona de horarios*/
 
-.horario-section {
-  background-color: #ffffff;
-  padding: 100px 60px; /* más padding general */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.table-wrap {
+  overflow-x: auto; /* permite scroll horizontal en móviles */
 }
 
-.horario-container {
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #0c3c96;
 }
 
-.horario-imagen img {
-  max-width: 400px; /* imagen más grande */
-  margin-left: -80px; 
-  height: auto;
-  
+thead th {
+  background: rgb(243, 218, 76);
+  padding: 12px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 2px solid #0c3c96;
 }
 
-.horario-texto h2 {
-  font-size: 3.2rem; /* título más grande */
-  margin-bottom: 40px;
-  color: #080530;
-  font-family: 'Bebas Neue', cursive;
+thead .main-header {
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.02em;
 }
 
-.horario-lista {
-  font-size: 1.5rem; /* texto más grande */
-  color: #000000;
-  line-height: 2.2;
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem; /* más espacio entre filas */
-  max-width: 420px;
+thead .sub-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px;
+  border-bottom: 2px solid #0c3c96;
 }
 
-.horario-row {
-  display: flex;
-  gap: 3rem; /* más espacio entre día y horas */
-  align-items: center;
+tbody td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #0c3c96;
+  min-height: 40px;
+  word-wrap: break-word; /* evita que el texto se salga */
 }
 
-.dia {
-  font-family: 'Bebas Neue', cursive;
-  min-width: 140px; /* ancho fijo más amplio */
-  flex-shrink: 0;
+tbody tr td:first-child {
+  text-align: left;
+  font-weight: 600;
+  padding-left: 14px;
+  background: #2068eeb1;
+  width: 22%;
+  border-right: 2px solid #0c3c96;
 }
 
-.horarios {
-  font-family: 'Bebas Neue', cursive;
-  white-space: normal;
-  line-height: 1.8;
-  flex: 1;
+.table-wrap table {
+  opacity: 0;
+  transform: translateX(80px); /* empieza fuera a la derecha */
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
 }
+
+.table-wrap table.visible {
+  opacity: 1;
+  transform: translateX(0); /* llega a su posición */
+}
+
+/* --- MEDIA QUERIES PARA MÓVIL --- */
+@media (max-width: 768px) {
+  thead th, thead .sub-header, tbody td {
+    font-size: 12px; /* reducir tamaño de fuente */
+    padding: 6px 4px; /* reducir padding */
+  }
+
+  tbody tr td:first-child {
+    font-size: 13px;
+    padding-left: 8px;
+  }
+
+  table {
+    max-width: 100%; /* que no exceda el ancho de la pantalla */
+  }
+}
+
 
 
 

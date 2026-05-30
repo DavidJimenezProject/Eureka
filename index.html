@@ -20,7 +20,6 @@
     </div>
 
     <nav class="nav-links">
-      <a href="#Eureka">Eureka</a>
       <a href="#que-hacemos">Qué hacemos</a>
       <a href="#porque-nos-eligen">Por qué nos eligen</a>
       <a href="#horario">Horario</a>
@@ -156,42 +155,72 @@
   </section>
 
   <section class="horario-section" id="horario">
-    <div class="horario-container">
-      <div class="horario-imagen">
-        <img src="imagen/reloj_horario.png" alt="Reloj animado" />
-      </div>
-      <div class="horario-texto">
-        <h2>HORARIO</h2>
-        <div class="horario-lista">
-          <div class="horario-row">
-            <div class="dia">Lunes</div>
-            <div class="horarios">16:00 - 20:00</div>
-          </div>
-          <div class="horario-row">
-            <div class="dia">Martes</div>
-            <div class="horarios">
-              10:00 - 12:00<br>
-              16:00 - 21:00
-            </div>
-          </div>
-          <div class="horario-row">
-            <div class="dia">Miércoles</div>
-            <div class="horarios">16:00 - 20:00</div>
-          </div>
-          <div class="horario-row">
-            <div class="dia">Jueves</div>
-            <div class="horarios">
-              10:00 - 12:00<br>
-              16:00 - 21:00
-            </div>
-          </div>
-          <div class="horario-row">
-            <div class="dia">Viernes</div>
-            <div class="horarios">16:00 - 18:00</div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="table-wrap">
+    <table>
+      <h2 class="titulo-llegar" >HORARIOS</h2>
+      <thead>
+        <tr>
+          <!-- celda de encabezado para la columna de días, vacía (sin la palabra "Día") -->
+          <th></th>
+
+          <!-- PINTO y PARLA centrados, cada uno abarcando 2 columnas -->
+          <th class="main-header" colspan="2">PINTO</th>
+          <th class="main-header" colspan="2">PARLA</th>
+        </tr>
+
+        <tr>
+          <!-- fila de subencabezados: Mañana / Tarde para cada bloque -->
+          <th class="sub-header"></th>
+          <th class="sub-header">MAÑANA</th>
+          <th class="sub-header">TARDE</th>
+          <th class="sub-header">MAÑANA</th>
+          <th class="sub-header">TARDE</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>LUNES</td>
+          <td>-</td>
+          <td>16:00 - 19:30</td>
+          <td>-</td>
+          <td>16:00 - 19:00</td>
+        </tr>
+
+        <tr>
+          <td>MARTES</td>
+          <td>10:00 - 12:00</td>
+          <td>16:00 - 21:00</td>
+          <td>-</td>
+          <td>16:00 - 19:00</td>
+        </tr>
+
+        <tr>
+          <td>MIERCOLES</td>
+          <td>-</td>
+          <td>16:00 - 19:30</td>
+          <td>-</td>
+          <td>16:00 - 19:00</td>
+        </tr>
+
+        <tr>
+          <td>JUEVES</td>
+          <td>10:00 - 12:00</td>
+          <td>16:00 - 21:00</td>
+          <td>-</td>
+          <td>16:00 - 19:00</td>
+        </tr>
+
+        <tr>
+          <td>VIERNES</td>
+          <td>-</td>
+          <td>16:00 - 18:00</td>
+          <td>-</td>
+          <td>16:00 - 19:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   </section>
 
   <section class="como-llegar" id="como-llegar">
@@ -235,11 +264,11 @@
   <section class="contacto-suscripcion" id="contacto">
     <div class="bloques-contacto">
 
-<!-- ¿Quieres decirnos algo? -->
+
 <div class="bloque desde-izquierda">
   <h3>¿Quieres decirnos algo?</h3>
   <form id="contactForm" class="form-contacto" action="https://formspree.io/f/xanpdeyv" method="POST">
-    <!-- Campo oculto para personalizar el asunto del correo -->
+    
     <input type="hidden" name="_subject" value="Nuevo mensaje de {{nombre}}" />
 
     <input type="text" name="nombre" placeholder="Nombre" required />
@@ -262,8 +291,9 @@
 
       </div>
   </section>
-
-  <script>//JavaScrip para la transicion de los textos
+  
+<!-- Metodos de JavaScrip para transiciones y movimientos -->
+  <script>
     const descripciones = document.querySelectorAll('.descripcion');
 
     const observer = new IntersectionObserver((entries) => {
@@ -281,7 +311,7 @@
     });
   </script>
 
-  <script>//JavaScrip para la transicion de los servicios
+  <script>
     const servicios = document.querySelectorAll('.servicio');
 
     const observer1 = new IntersectionObserver((entradas) => {
@@ -392,6 +422,25 @@
       alert("❌ Hubo un error al enviar tu mensaje. Intenta de nuevo.");
     });
   });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const table = document.querySelector(".table-wrap table");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        table.classList.add("visible");
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  observer.observe(table);
+});
+
 </script>
 
 </body>
