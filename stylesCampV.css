@@ -654,15 +654,73 @@ section::before {
   justify-content: center; /* más espacio entre imagen y texto */
   flex-wrap: wrap;
 }
+
+
+.titulo-talleres {
+  font-size: 3.2rem; /* título más grande */
+  margin-bottom: 40px;
+  text-align: center;
+  color: #080530;
+  font-family: 'Bebas Neue', cursive;
+}
+
 .horario-container1 {
   max-width: 1000px;
   margin: auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center; /* más espacio entre imagen y texto */
-  gap: 15px;
-  flex-wrap: wrap;
+  gap: 25px;
 }
+
+.card-fecha {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.card-fecha img {
+  width: 100%;
+  max-width: 330px; /* más grandes */
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card-fecha img:hover {
+  transform: scale(1.05);
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-contenido {
+  margin: auto;
+  display: block;
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
 
 .horario-imagen img {
   max-width: 400px; /* imagen más grande */

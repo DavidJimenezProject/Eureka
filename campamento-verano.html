@@ -22,8 +22,8 @@
     <nav class="nav-links">
       <a href="index.html">Eureka</a>
       <a href="#actividades">Actividades</a>
-      <a href="#horario">Horario</a>
-      <a href="#fechas">Fechas</a>
+      <a href="#campamento">Campamento 2026</a>
+      <a href="#informacion">Informacion</a>
       <a href="#precios">Precios</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -172,7 +172,7 @@
 
   </section>
 
-  <section class="horario" id="horario">
+  <section class="horario" id="campamento">
     <div class="horario-container">
       <div class="horario-texto">
         <h2>  CAMPAMENTO DE VERANO 2026 </h2>
@@ -184,19 +184,32 @@
   </section>
 
 
-  <section class="fechas" id="fechas">
-    <div class="horario-container1">
-      <div class="horario-imagen">
-        <img src="imagen/fechas.png" alt="Reloj animado" />
-      </div>
-      <div class="horario-texto">
-        <h2>FECHAS</h2>
-          <img src="imagen/campa 26 minecraft.png" />
-          <img src="imagen/campa 26 simpson.png" />
-          <img src="imagen/campa 26 stranger.png" />
-        </div>
-      </div>
-  </section>
+<section class="fechas" id="informacion">
+
+  <h2 class="titulo-talleres">INFORMACION SOBRE TALLERES</h2>
+
+  <div class="horario-container1">
+
+    <div class="card-fecha">
+      <img src="imagen/campa 26 minecraft.png" alt="Minecraft" class="zoom-img">
+    </div>
+
+    <div class="card-fecha">
+      <img src="imagen/campa 26 simpson.png" alt="Simpson" class="zoom-img">
+    </div>
+
+    <div class="card-fecha">
+      <img src="imagen/campa 26 stranger.png" alt="Stranger Things" class="zoom-img">
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal-img" class="modal">
+  <span class="cerrar">&times;</span>
+  <img class="modal-contenido" id="img-grande">
+</div>
 
   <section class="precios" id="precios">
     <div class="horario-container">
@@ -374,6 +387,39 @@
     });
   });
 </script>
+
+<script>
+  const modal = document.getElementById("modal-img");
+  const modalImg = document.getElementById("img-grande");
+  const cerrar = document.querySelector(".cerrar");
+
+  // Abrir modal al hacer clic en una imagen
+  document.querySelectorAll(".zoom-img").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+
+  // Cerrar con la X
+  cerrar.onclick = () => {
+    modal.style.display = "none";
+  };
+
+  // Cerrar haciendo clic fuera de la imagen
+  modal.onclick = (e) => {
+    if (e.target === modal) modal.style.display = "none";
+  };
+
+  // Cerrar con tecla Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      modal.style.display = "none";
+    }
+  });
+</script>
+
+
 
 </body>
 
