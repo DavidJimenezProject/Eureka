@@ -674,6 +674,7 @@ section::before {
 .horario-texto h2 {
   font-size: 3.2rem; /* título más grande */
   margin-bottom: 40px;
+  text-align: center;
   color: #080530;
   font-family: 'Bebas Neue', cursive;
 }
