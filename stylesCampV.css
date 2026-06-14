@@ -732,11 +732,17 @@ section::before {
 
 
 .horario-imagen img {
-  max-width: 400px; /* imagen más grande */
-  margin-left: -150px; 
+  max-width: 400px; /* tamaño en ordenador */
+  margin-left: -150px;
   height: auto;
-  
 }
+
+/* Versión móvil */
+@media (max-width: 768px) {
+  .horario-imagen img {
+    max-width: 200px; /* más pequeña en móvil */
+    margin-left: 0;   /* opcional: evita que se desplace */
+  
 
 .horario-texto h2 {
   font-size: 3.2rem; /* título más grande */
