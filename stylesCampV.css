@@ -705,12 +705,21 @@ section::before {
   background-color: rgba(0,0,0,0.8);
 }
 
+/* Tamaño por defecto (ordenador) */
 .modal-contenido {
   margin: auto;
   display: block;
-  max-width: 45%;
+  max-width: 40%; /* tamaño en PC */
   border-radius: 10px;
 }
+
+/* Tamaño en móviles */
+@media (max-width: 768px) {
+  .modal-contenido {
+    max-width: 70%; /* más grande en móvil */
+  }
+}
+
 
 .cerrar {
   position: absolute;
