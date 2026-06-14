@@ -738,6 +738,14 @@ section::before {
   
 }
 
+/* Versión móvil */
+@media (max-width: 480px) {
+  .horario-imagen img {
+    max-width: 100px;
+    margin-left: 0; /* opcional: evita desajustes en móvil */
+  }
+}
+
 .horario-texto h2 {
   font-size: 3.2rem; /* título más grande */
   margin-bottom: 40px;
