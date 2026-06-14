@@ -740,7 +740,7 @@ section::before {
 /* Versión móvil */
 @media (max-width: 768px) {
   .horario-imagen img {
-    max-width: 200px; /* más pequeña en móvil */
+    max-width: 150px; /* más pequeña en móvil */
     margin-left: 0;   /* opcional: evita que se desplace */
   
 
