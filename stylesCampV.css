@@ -783,6 +783,9 @@ section::before {
   flex: 1;
 }
 
+* {
+  font-family: 'Nunito', sans-serif;
+}
 
 
 

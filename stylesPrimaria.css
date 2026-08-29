@@ -637,6 +637,11 @@ section::before {
     width: 100%;
     max-width: 300px;
   }
+
+  * {
+  font-family: 'Nunito', sans-serif;
+}
+
 }
 
 
